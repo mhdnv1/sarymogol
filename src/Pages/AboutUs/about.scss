@@ -1,0 +1,24 @@
+.about{
+    &__bg{
+        background-image: url(../../Asets/AboutUs/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3{
+            color: white;
+            font-size: 100px;
+            text-align: center;
+        }
+    }
+    .display{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+}

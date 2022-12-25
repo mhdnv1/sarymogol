@@ -1,0 +1,16 @@
+.blog{
+   .blog__bg{
+        background-image: url(../../Asets/Blog/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+        h3{
+            color: white;
+            font-size: 100px;
+        }
+}
