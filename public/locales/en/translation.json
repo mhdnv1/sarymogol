@@ -1,0 +1,100 @@
+{
+    "header": {
+        "link1": "Sarymogol",
+        "link2": "All Tours",
+        "link3": {
+           "link3_title":"Info",
+           "link3":"Essential information",
+           "link3_kg":"Kyrgyzstan",
+           "link3_kz":"Kazakhstan",
+           "link3_uz":"Uzbekstan",
+           "link3_tj":"Tajikistan"
+        },
+        "link4": "Blog",
+        "link5": "FAQs",
+        "link6": "About us",
+        "link7": "Contact us"
+      },
+      "slider":{
+        "link1":"Lichen winter event",
+        "link1__p":"Sary Mogol diversity of tourism in Kyrgyzstan"
+      },
+      "footer":{
+        "networks":"Get connected with us on social networks",
+        "footer__description":"Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "footer__address":"Osh Lenina 341",
+        "copyright":"Copyright"
+      },
+      "blog":{
+        "blog__title":"Blog"
+      },
+      "services":{
+        "link1":"50+ Different Tours",
+        "link1__p":"Cool sary mogol tours! You never get bored with us!",
+        "link2":"Beautiful Places",
+        "link2__p":"Morbi semper fames lobortis ac hac penatibus",
+        "link3":"Unforgettable adventures",
+        "link3__p":"Morbi semper fames lobortis ac hac penatibus"
+      },
+      "maps":{
+        "title":"Combine with a Pamir Highway Tour",
+        "text":"If you are interested in continuing on the Pamir Highway to or from Tajikistan we can easily combine this trekking tour with one of our other Pamir Highway tours. This will allow you to experience the best of the Alay Mountains and the Pamir Highway together in an easy, seamless way."
+      },
+      "tabs":{
+        "osh__title":"Osh",
+        "osh":"Osh (Kyrgyz: Ош, romanised Osh; Uzbek: O‘sh/Ўш) is the second-largest city in Kyrgyzstan, located in the Fergana Valley in the south of the country and often referred to as the 'capital of the south'.[4] It is the oldest city in the country (estimated to be more than 3,000 years old) and has served as the administrative center of Osh Region since 1939. The city has an ethnically mixed population of 322,164 in 2021,[3] comprising Uzbeks, Kyrgyz, Russians, Tajiks, and other smaller ethnic groups. It is about 5 km from the Uzbekistan border.Osh has an important outdoor bazaar which has been taking place on the same spot for the past 2000 years and was a major market along the Silk Road. The city's industrial base, established during the Soviet period, largely collapsed after the break-up of the Soviet Union and has recently only started to revive.",
+        "alay__title":"Alay",
+        "alay":"The Alai region, formed in 1928, is located in the Osh region of Kyrgyzstan. The village of Gulcha is the administrative center of the district. Alai region lies on the territory of two valleys: Gulchinskaya and Alaiskaya. The Alai region is bounded in the south by the Zaalaysky ridge, in the west by the Ak-Ter ridge, in the northeast by the Adyshev ridge. Settlements are located along the banks of the Gulcha River, as well as on the flat areas of the Alai depression. The Alai region includes 13 districts, which include 60 settlements. One of these settlements is the village of Sary-Tash. To the east of the village is the border with China. For this reason, since the times of the USSR, there was a border outpost in Sary-Tash.",
+        "sarymogol__title":"Sarymogol",
+        "sarymogol":"The small village of Sary-Mogol is the starting point from which the route for conquering Lenin Peak begins. It is located in the Alai valley of the Osh region. The village offers a delightful view of the mountains of the Chon-Alai Range. Here you can see almost alpine landscapes, admire the eternal snows and glaciers on the peaks.This place is many kilometers away from the bustle of the city, noise and smog, so here you can fully enjoy the benefits of living in a high-mountain jailoo, hike to a mountain lake, taste national dishes and drinks, and ride yaks."
+      },
+      "Gallery":"Trending Destinations",
+      "Reviews":{
+        "title":"Customer Feedback",
+        "user1":"Artur",
+        "user1_p":"Thank you for the Fascinating Sary mogol tour, everything was great!",
+        "user2":"Baktiyar",
+        "user3":"Fahridin"
+      },
+      "alltours":{
+        "title":"All Tours",
+        "text":"Diversity of tourism in Kyrgyzstan"
+      },
+      "info":{
+        "kg":"Kyrgyzstan",
+        "kz":"Kazakhstan",
+        "uz":"Uzbekistan",
+        "tj":"Tajikistan",
+        "more":"Learn more",
+        "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      "faqs":{
+        "link1":"Why are your tours so expensive?",
+        "link1__p":" Varius massa maecenas et id dictumst mattis. Donec fringilla ac parturient posuere id phasellus erat elementum nullam lacus cursus rhoncus parturient vitae praesent quisque nascetur molestie quis",
+        "link2":"How many tours do you have?",
+        "link2__p":" Varius massa maecenas et id dictumst mattis. Donec fringilla ac parturient posuere id phasellus erat elementum nullam lacus cursus rhoncus parturient vitae praesent quisque nascetur molestie quis",
+        "link3":"Currently we have more than 10 tours. You definitely will like them all!",
+        "link3__p":" Varius massa maecenas et id dictumst mattis. Donec fringilla ac parturient posuere id phasellus erat elementum nullam lacus cursus rhoncus parturient vitae praesent quisque nascetur molestie quis"
+      },
+      "about":{
+        "title":"About",
+        "story":"Our Story",
+        "story__p":"The touristic center of Alay and Chon-Alay is Sary Mogol village, which is located in front of Lenin Peak and alpine-color lake Tulpar Kol. This is a vast diverse landscape of tourism. Arriving in the summer and the Alay Valley meets you with lush green challenges, illuminated by the bright sun and with fresh mountain air and yurt accommodations. The perfect place for trekking adventures. As the seasons change, the valley turns into a rich winter landscape, surrounded by high mountain peaks – optimal conditions for ski freeriding.",
+        "mission":"Our mission",
+      "mission__text":"For travelers who come from Tajikistan or China or those who are moving to one of these countries. we have an amazing opportunity to spend the night in the yurt at the shore Tulpar Kol alpine lake and see Lenin Peak (7134m) at close range and see the picturesque landscapes of Alay valley.Alay and Chon Alay area are located in the far south- west of Kyrgyzstan and bordered on Tajikistan (Pamir- Highway through Kyzyl-Art; 30km) with China (Erkeshtam border; 100km) and also have an ideal access through Osh to Sary-Mogol. From/or to Uzbekistan (via Dostuk)",
+      "text":"If off-the-beaten-track is what you’re searching for, you’ve found it by us If you are interested in a trip to the southern area of Kyrgyzstan, you need to get to Sary Mogol from here started off all the active, scenic and adventurous travels.",
+      "author":"Abdilla Salamatov",
+      "prof":"Founder",
+      "workers":"Sary Mogol's team",
+      "work":"Ceo"
+      },
+      "contact":{
+        "title":"Contact Us",
+        "title__text":"We'd love to hear from you",
+        "title__text__p":"Send us a message and we'll respond as soon as possible",
+        "send":"Send message",
+        "submit":"Send",
+        "address":"Address",
+        "address__text":"123, Bishkek Chuy"
+      }
+}

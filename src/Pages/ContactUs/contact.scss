@@ -1,0 +1,71 @@
+.contact {
+    &__bg {
+        background-image: url(../../Asets/ContactUs/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            color: white;
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+
+    .registration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form { 
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px gray;
+            input {
+                border: none;
+                outline: 0;
+                background-color: rgba(233, 243, 245, 0.752);
+                color: black;
+            }
+        }
+    }
+
+    .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        row-gap: 30px;
+    }
+
+    .whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 30px;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px gray;
+        transition: 0.5s;
+        &:hover{
+            background-color: green;
+        }
+    }
+    .whatsapp span  {
+        font-size: 225px; 
+    } 
+    @media screen and (max-width:575px){
+        .whatsapp span  {
+            font-size: 190px; 
+        } 
+        }
+}

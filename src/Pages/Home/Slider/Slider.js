@@ -6,8 +6,10 @@ import img3 from '../../../Asets/Home/Slider/3.jpg'
 import img4 from '../../../Asets/Home/Slider/4.jpg'
 import img5 from '../../../Asets/Home/Slider/5.jpg'
 import img6 from '../../../Asets/Home/Slider/6.jpg'
+import {useTranslation} from "react-i18next";
 
 function SliderHome() {
+  const {t} = useTranslation();
   return (
     <Carousel className="carusel">
       <Carousel.Item>
@@ -17,8 +19,8 @@ function SliderHome() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Лижные зимние мероприятие</h3>
-          <p>Сары Могол разнообразие туризма Кыргызстана</p>
+          <h3>{t("slider.link1")}</h3>
+          <p>{t("slider.link1__p")}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,8 +31,8 @@ function SliderHome() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>{t("slider.link1")}</h3>
+          <p>{t("slider.link1__p")}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -41,10 +43,8 @@ function SliderHome() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+           <h3>{t("slider.link1")}</h3>
+          <p>{t("slider.link1__p")}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -55,10 +55,8 @@ function SliderHome() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <h3>{t("slider.link1")}</h3>
+          <p>{t("slider.link1__p")}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -69,10 +67,8 @@ function SliderHome() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+           <h3>{t("slider.link1")}</h3>
+          <p>{t("slider.link1__p")}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -83,10 +79,8 @@ function SliderHome() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+           <h3>{t("slider.link1")}</h3>
+          <p>{t("slider.link1__p")}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
