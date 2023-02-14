@@ -1,4 +1,5 @@
-import React  from 'react';
+import React , {useEffect, useState} from 'react';
+import axios from 'axios';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import img1 from '../../../Asets/Home/Slider/1.jpg'
@@ -11,6 +12,14 @@ import {useTranslation} from "react-i18next";
 
 const Gallery = () => {
     const {t} = useTranslation();
+    const [cards, setUser] = useState([{}])
+    const getApi = () => {
+        axios.get('https://sarymogol.com/api/mainimg')
+            .then(({ data }) => setUser(data))
+    }
+    useEffect(() => {
+        getApi()
+    }, []);
 
     return (
         <div data-aos="zoom-in-down">

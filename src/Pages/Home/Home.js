@@ -1,52 +1,63 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import SliderHome from './Slider/Slider';
 import './home.scss'
 import { Container } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Osh from './Tabs/Osh/Osh';
-import Alay from './Tabs/Alay/Alay';
-import SaryMogol from './Tabs/Sarymogol/Sarymogol';
 import Tours from './Tours/Tours';
 import Services from './Services/Services';
 import Maps from './Maps/Maps';
 import Gallery from './Gallery/Gallery';
-import Reviews from './Reviews/Reviews';
-import {useTranslation} from "react-i18next";
-
+// import Reviews from './Reviews/Reviews';
+import { useTranslation } from "react-i18next";
+import { Lang } from '../../Layout/Layout';
+import axios from 'axios';
+import TabsSlider from './Tabs/Alay/alaySlider';
 
 const Home = () => {
-    const {t} = useTranslation();
+    const [cards, setUser] = useState([{}])
+    const { t, i18n } = useTranslation();
+    const langContext = useContext(Lang)
+
+    const getApi = () => {
+        axios.get('https://sarymogol.com/api/areas')
+            .then(({ data }) => setUser(data))
+    }
+    useEffect(() => {
+        getApi()
+
+    }, []);
     return (
         <div className="home">
-            <SliderHome/>
-                <Container>
+            <SliderHome />
+            <Container>
                 <div data-aos="fade-right">
-                <Tabs
-                    defaultActiveKey="Osh"
-                    id="fill-tab-example"
-                    className="my-2 p-2"
-                    fill>
-                    <Tab eventKey="Osh" title={t("tabs.osh__title")}>
-                        <Osh />
-                    </Tab>
-                    <Tab eventKey="Alay" title={t("tabs.alay__title")}>
-                        <Alay/>
-                    </Tab>
-                    <Tab eventKey="Sary Mogol" title={t("tabs.sarymogol__title")} >
-                        <SaryMogol />
-                    </Tab>
-                </Tabs>
-                <br/>
+                    <Tabs
+                        defaultActiveKey="Osh"
+                        id="fill-tab-example"
+                        className="my-2 p-2"
+                        fill>
+                        {cards.map((item) => {
+                            return (
+                                <Tab eventKey={langContext.bool ? item.nameRus : item.nameEng} title={langContext.bool ? item.nameRus : item.nameEng}>
+                                    <div className="d-flex~">
+                                        <p className="col-6">{langContext.bool ? item.descriptionRus : item.descriptionEng}</p>
+                                        <TabsSlider className='col-6'/>
+                                    </div>
+                                </Tab>
+                            )
+                        })}
+                    </Tabs>
+                    <br />
                 </div>
-                </Container>
-                <Tours/>
-                <Container>
-                    <Services/>
-                    <Maps/>
-                    <Gallery/>
-                    <Reviews/>
-                </Container>
+            </Container>
+            <Tours />
+            <Container>
+                <Services />
+                <Maps />
+                <Gallery />
+                {/* <Reviews/> */}
+            </Container>
         </div>
     );
 }
