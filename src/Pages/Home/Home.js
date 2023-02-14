@@ -40,7 +40,7 @@ const Home = () => {
                         {cards.map((item) => {
                             return (
                                 <Tab eventKey={langContext.bool ? item.nameRus : item.nameEng} title={langContext.bool ? item.nameRus : item.nameEng}>
-                                    <div className="d-flex~">
+                                    <div className="d-flex">
                                         <p className="col-6">{langContext.bool ? item.descriptionRus : item.descriptionEng}</p>
                                         <TabsSlider className='col-6'/>
                                     </div>
