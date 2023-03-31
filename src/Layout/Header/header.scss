@@ -1,0 +1,21 @@
+.header{
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  a{
+    text-decoration: none;
+    color: #6c757d;
+    &:hover{
+      color: #090909;
+    }
+  }
+  .header__btns{
+    display: flex;
+    gap: 2px;
+  }
+}
+.header__content{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

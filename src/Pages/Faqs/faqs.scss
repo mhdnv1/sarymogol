@@ -1,0 +1,21 @@
+.faqs{
+    .faqs__bg{
+         background-image: url(../../Asets/Faqs/bg.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 500px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+         h3{
+             color: white;
+             font-size: 100px;
+         }
+    @media screen and (max-width:590px){
+        h3{
+            font-size: 40px;
+        }
+    }
+ }

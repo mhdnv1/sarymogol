@@ -1,0 +1,82 @@
+import React from 'react';
+import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { BsFacebook, BsTwitter, BsGoogle, BsLinkedin, BsGithub, BsInstagram, BsYoutube, BsWhatsapp } from 'react-icons/bs';
+import { FaHome, FaEnvelopeOpen, FaPhoneAlt, FaPrint, FaGem } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import { useTranslation } from "react-i18next";
+import './footer.scss'
+
+export default function Footer() {
+  const { t } = useTranslation();
+  return (
+    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted footer mt-4' style={{marginBottom:"-40px"}}>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>{t("footer.networks")}:</span>
+        </div>
+
+        <div className="footer__networks">
+          <a href="https://www.facebook.com/sarymogolcbt"><BsFacebook /></a>
+          <a href="https://www.youtube.com/@cbt-sarymogol7960"><BsYoutube /></a>
+          <a href="https://instagram.com/cbt_sarymogol?igshid=YmMyMTA2M2Y="><BsInstagram /></a>
+          <a href="#"><BsLinkedin /></a>
+          {/* <a href="#"><BsGithub /></a> */}
+        </div>
+      </section>
+
+      <section className=''>
+        <MDBContainer className='text-center text-md-start mt-5'>
+          <MDBRow className='mt-3'>
+            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>
+                <FaGem className="me-3" />
+                <Link to='/'>Sarymogol</Link>
+              </h6>
+              <p>
+                {t("footer.footer__description")}  <a style={{color:"blue"}} href="https://www.tripadvisor.com/">tripadvisor.com</a>
+                <div style={{paddingTop:"20px"}} id="TA_excellent809" class="TA_excellent">
+                  <ul style={{ margin:"0px", padding:"0px"}} id="vG4utkt8nHP" class="TA_links XmO6Ud5">
+                    <li style={{listStyle:'none'}} id="bODk28DW" class="zxvyvoaN">
+                      <a  target="_blank" href="https://www.tripadvisor.ru/Attraction_Review-g12316962-d12335080-Reviews-CBT_Sary_Mogol-Sary_Mogul_Osh_Province.html">
+                        <img style={{width:"250px", height:'auto', objectFit:"contain"}} src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <script async src="https://www.jscache.com/wejs?wtype=excellent&amp;uniq=809&amp;locationId=12335080&amp;lang=ru&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+              <p><Link to='/alltours'>{t("header.link2")}</Link></p>
+              <p><Link to='/info'>{t("header.link3.link3_title")}</Link></p>
+              <p><Link to='/blog'>{t("header.link4")}</Link></p>
+
+            </MDBCol>
+
+            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-8'>
+              <p><Link to='/faqs'>{t("header.link5")}</Link></p>
+              <p><Link to='/aboutus'>{t("header.link6")}</Link></p>
+              <p><Link to='/contactus'>{t("header.link7")}</Link></p>
+            </MDBCol>
+
+            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>{t("header.link7")}</h6>
+              <p><FaHome className="me-3" />{t("footer.footer__address")}</p>
+              <p><FaEnvelopeOpen className="me-3" /><a href="mailto:Sarymogol@gmail.com">Sarymogol@gmail.com</a></p>
+              <p><FaPhoneAlt className="me-3" /><a href="tel:+996556092627">+996556092627</a></p>
+              <p><BsWhatsapp className="me-3" /><a href="https://wa.me/+996556092627">+996556092627</a></p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </section>
+
+      <div className='text-center p-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+        © 2023 {t("footer.copyright")}: <br />
+        <a className='text-reset' href='mailto:coderunkg@gmail.com'>
+          coderunkg.@gmail.com
+        </a>
+      </div>
+    </MDBFooter>
+  );
+}

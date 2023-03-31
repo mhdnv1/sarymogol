@@ -1,0 +1,16 @@
+.footer{
+    &__networks{
+        display: flex;
+        gap: 20px;
+        a:hover{
+            color: #090909;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:#6c757d;
+        &:hover{
+            color: #090909;
+        }
+    }
+}

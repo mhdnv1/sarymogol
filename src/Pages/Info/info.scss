@@ -1,0 +1,32 @@
+.info{
+    .info__countrys{
+         position: relative;
+    }
+    .info__btn{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 20px;
+        a{
+            color: white;
+        }
+    }
+    h3{
+        font-size: 90px;
+        color: white;
+    }
+    p{
+        padding: 20px;
+    }
+    @media screen and (max-width: 540px) {
+        .info__btn{
+           top: 59%;
+        }
+        h3{
+            font-size: 40px;
+        }
+    }
+}

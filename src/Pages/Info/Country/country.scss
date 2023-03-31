@@ -1,0 +1,40 @@
+@mixin bg($bgR, $bgS , $bgP , $height, $df, $justifyC, $alignI){
+    background-repeat:$bgR;
+    background-size: $bgS;
+    background-position: $bgP;
+    height: $height;
+    display: $df;
+    justify-content: $justifyC;
+    align-items: $alignI;
+}
+    .kg__bg{
+        background-image: url(../../../Asets/Info/KG/bg.png);
+        @include bg(no-repeat ,cover,center,500px,flex,center,center )
+    }
+    .kz__bg{
+        background-image: url(../../../Asets/Info/KZ/bg.jpeg);
+        @include bg(no-repeat ,cover,center,500px,flex,center,center )
+    }
+    .uz__bg{
+        background-image: url(../../../Asets/Info/UZ/bg.jpg);
+        @include bg(no-repeat ,cover,center,500px,flex,center,center )
+    }
+    .tj__bg{
+        background-image: url(../../../Asets/Info/TJ/bg.webp);
+        @include bg(no-repeat ,cover,center,500px,flex,center,center )
+    }
+.country{
+      h3{
+        font-size: 90px;
+        color: white;
+    }
+    p{
+        padding: 20px;
+    }
+    @media screen and (max-width:540px) {
+        h3{
+            font-size: 40px;
+        }
+    }
+}
+   
